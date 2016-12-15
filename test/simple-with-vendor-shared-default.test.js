@@ -39,5 +39,5 @@ test.before('run webpack build first', async t => {
 test('it should run successfully', async t => {
   let {stats, warnings, errors} = webpackBuildStats;
 
-  t.falsy(stats.hasWarnings() && stats.hasWarnings());
+  t.falsy(stats.hasWarnings() && stats.hasErrors());
 });
