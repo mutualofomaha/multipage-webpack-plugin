@@ -40,6 +40,7 @@ test('it should run successfully', async t => {
   t.falsy(stats.hasWarnings() && errors.hasWarnings());
 });
 
+
 test('custom template should contain the correct content string from template', async t => {
   let {stats, warnings, errors} = webpackBuildStats;
   let allTemplatesMatch = true;
@@ -56,5 +57,4 @@ test('custom template should contain the correct content string from template', 
   }
 
   t.true(allTemplatesMatch);
-
 });
